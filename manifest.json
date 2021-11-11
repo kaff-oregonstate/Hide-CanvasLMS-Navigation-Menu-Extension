@@ -1,0 +1,21 @@
+{
+  "name": " hide nav menu for canvas® ",
+  "version": "0.0.1",
+  "description": "hides nav menu on page load | open source canvas® tweak | by kaff-oregonstate",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2,
+  "incognito": "split",
+  "content_scripts": [
+  {
+    "matches": ["https://canvas.oregonstate.edu/courses/*/pages/*", "https://canvas.oregonstate.edu/courses/*/modules"],
+    "js": ["toggleCourseMenuOnLoad.js"]
+  }
+  ]
+}
