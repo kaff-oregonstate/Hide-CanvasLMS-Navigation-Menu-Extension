@@ -15,7 +15,7 @@
   "content_scripts": [
   {
     "matches": ["https://canvas.oregonstate.edu/courses/*/pages/*", "https://canvas.oregonstate.edu/courses/*/modules"],
-    "js": ["toggleCourseMenuOnLoad.js"]
+    "js": ["toggleNavMenuOnLoad.js"]
   }
   ]
 }
